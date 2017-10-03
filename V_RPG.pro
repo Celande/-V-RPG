@@ -9,10 +9,8 @@ CONFIG -= app_bundle
 
 TEMPLATE = app
 
-SOURCES += main.cpp \
-    source/main.cpp \
-    test.cpp \
-    source/test.cpp
+SOURCES += \
+    source/main.cpp
 
 # The following define makes your compiler emit warnings if you use
 # any feature of Qt which as been marked deprecated (the exact warnings
@@ -24,3 +22,25 @@ DEFINES += QT_DEPRECATED_WARNINGS
 # In order to do so, uncomment the following line.
 # You can also select to disable deprecated APIs only up to a certain version of Qt.
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
+
+DISTFILES += \
+    README.md \
+    docs/Stats.docx \
+    docs/determination_of_stat.PNG \
+    docs/move_priority.PNG \
+    docs/nature_list.PNG \
+    docs/type_chart.PNG \
+    docs/Effect/weather_effect.xlsx \
+    docs/Effect/status_effect.docx \
+    docs/Effect/terrain_effect.docx \
+    docs/Effect/volatile_status_effect.docx \
+    docs/Effect/volatile_terrain_effect.docx \
+    docs/Effect/weather_effect.docx \
+    docs/UML/battlefield.dia \
+    docs/UML/effect.dia \
+    docs/UML/enum.dia \
+    docs/UML/item.dia \
+    docs/UML/pkm.dia \
+    docs/UML/pkm_bot_uml.dia \
+    docs/UML/stat.dia \
+    docs/UML/status.dia
