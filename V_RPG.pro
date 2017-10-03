@@ -10,7 +10,12 @@ CONFIG -= app_bundle
 TEMPLATE = app
 
 SOURCES += \
-    source/main.cpp
+    source/main.cpp \
+    source/enum/namedenum.cpp \
+    source/enum/symboledenum.cpp \
+    source/enum/image.cpp \
+    source/enum/valuedenum.cpp \
+    source/enum/gender.cpp
 
 # The following define makes your compiler emit warnings if you use
 # any feature of Qt which as been marked deprecated (the exact warnings
@@ -44,3 +49,10 @@ DISTFILES += \
     docs/UML/pkm_bot_uml.dia \
     docs/UML/stat.dia \
     docs/UML/status.dia
+
+HEADERS += \
+    source/enum/namedenum.h \
+    source/enum/symboledenum.h \
+    source/enum/image.h \
+    source/enum/valuedenum.h \
+    source/enum/gender.h
