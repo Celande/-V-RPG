@@ -15,7 +15,7 @@ SOURCES += \
     source/enum/symboledenum.cpp \
     source/enum/image.cpp \
     source/enum/valuedenum.cpp \
-    source/enum/gender.cpp
+    source/stat/stat.cpp
 
 # The following define makes your compiler emit warnings if you use
 # any feature of Qt which as been marked deprecated (the exact warnings
@@ -55,4 +55,12 @@ HEADERS += \
     source/enum/symboledenum.h \
     source/enum/image.h \
     source/enum/valuedenum.h \
-    source/enum/gender.h
+    source/enum/gender.h \
+    source/enum/category.h \
+    source/enum/type.h \
+    source/enum/nature.h \
+    source/stat/stat.h \
+    source/enum/stat.h \
+    source/enum/hiddenstat.h \
+    source/enum/priority.h \
+    source/enum/statstage.h
