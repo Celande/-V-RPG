@@ -10,7 +10,7 @@ class ValuedEnum
 protected:
     int value;
 
-    ValuedEnum getEnum(int v){}
+    virtual ValuedEnum getEnum(int v){return NULL;}
 public:
     ValuedEnum(int value);
     int getValue();

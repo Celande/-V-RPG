@@ -11,10 +11,6 @@ TEMPLATE = app
 
 SOURCES += \
     source/main.cpp \
-    source/enum/namedenum.cpp \
-    source/enum/symboledenum.cpp \
-    source/enum/image.cpp \
-    source/enum/valuedenum.cpp \
     source/stat/stat.cpp \
     source/enumeration/image.cpp \
     source/enumeration/namedenum.cpp \
@@ -55,18 +51,7 @@ DISTFILES += \
     docs/UML/status.dia
 
 HEADERS += \
-    source/enum/namedenum.h \
-    source/enum/symboledenum.h \
-    source/enum/image.h \
-    source/enum/valuedenum.h \
-    source/enum/gender.h \
-    source/enum/type.h \
-    source/enum/nature.h \
     source/stat/stat.h \
-    source/enum/stat.h \
-    source/enum/hiddenstat.h \
-    source/enum/priority.h \
-    source/enum/statstage.h \
     source/enumeration/category.h \
     source/enumeration/gender.h \
     source/enumeration/hiddenstat.h \
