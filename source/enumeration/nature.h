@@ -37,7 +37,7 @@ private:
         this->stat = stat;
     }
 };
-               /*Percent of stats added according to base stat : HP     ATK      DEF      SPE_ATK  SPE_DEF  SPE*/
+              /*Multiply by stats added according to base stat : HP     ATK      DEF      SPE_ATK  SPE_DEF  SPE*/
 const Nature Nature::HARDY      = Nature("Hardy",       new Stat(0,     0,       0,       0,       0,       0));
 const Nature Nature::LONELY     = Nature("Lonely",      new Stat(0,     0.1,     -0.1,    0,       0,       0));
 const Nature Nature::BRAVE      = Nature("Brave",       new Stat(0,     0.1,     0,       0,       0,       -0.1));
