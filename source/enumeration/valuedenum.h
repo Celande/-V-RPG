@@ -7,10 +7,12 @@
 
 class ValuedEnum
 {
+public:
+    static const ValuedEnum VALUE_NULL;
 protected:
     int value;
 
-    virtual ValuedEnum getEnum(int v){return NULL;}
+    virtual ValuedEnum getEnum(int v){return VALUE_NULL;}
 public:
     ValuedEnum(int value);
     int getValue();
@@ -22,5 +24,7 @@ public:
     ValuedEnum operator+ (const ValuedEnum& v);
     ValuedEnum operator- (const ValuedEnum& v);
 };
+
+const ValuedEnum ValuedEnum::VALUE_NULL = ValuedEnum(42);
 
 #endif // VALUEDENUM_H

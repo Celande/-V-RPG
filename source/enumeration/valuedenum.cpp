@@ -32,7 +32,7 @@ ValuedEnum ValuedEnum::operator+ (const ValuedEnum& v){
         int n = this->value + v.value;
         return getEnum(n);
     }
-    return NULL;
+    return VALUE_NULL;
 }
 
 ValuedEnum ValuedEnum::operator- (const ValuedEnum& v){
@@ -40,5 +40,5 @@ ValuedEnum ValuedEnum::operator- (const ValuedEnum& v){
         int n = this->value - v.value;
         return getEnum(n);
     }
-    return NULL;
+    return VALUE_NULL;
 }
