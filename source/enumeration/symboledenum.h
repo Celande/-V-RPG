@@ -6,6 +6,7 @@
 
 class SymboledEnum : public NamedEnum
 {
+    // CREATE A CACHE WITH : A HASHMAP ?
 protected:
     Image symbol;
 public:
