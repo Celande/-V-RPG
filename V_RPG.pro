@@ -20,7 +20,11 @@ SOURCES += \
     source/pokemon/abstractpokemon.cpp \
     source/pokemon/ability.cpp \
     source/pokemon/move.cpp \
-    source/pokemon/battlepokemon.cpp
+    source/pokemon/battlepokemon.cpp \
+    source/battlefield/battlefield.cpp \
+    source/battlefield/weather.cpp \
+    source/battlefield/terrain.cpp \
+    source/battlefield/side.cpp
 
 # The following define makes your compiler emit warnings if you use
 # any feature of Qt which as been marked deprecated (the exact warnings
@@ -84,4 +88,8 @@ HEADERS += \
     source/pokemon/abstractpokemon.h \
     source/pokemon/ability.h \
     source/pokemon/move.h \
-    source/pokemon/battlepokemon.h
+    source/pokemon/battlepokemon.h \
+    source/battlefield/battlefield.h \
+    source/battlefield/weather.h \
+    source/battlefield/terrain.h \
+    source/battlefield/side.h
