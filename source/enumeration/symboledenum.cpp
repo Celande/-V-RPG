@@ -4,8 +4,12 @@ using namespace std;
 
 SymboledEnum::SymboledEnum(std::string name, Image symbol) : NamedEnum(name)
 {
-    //this->name = name;
     this->symbol = symbol;
+}
+
+SymboledEnum::SymboledEnum(std::string name) : NamedEnum(name)
+{
+    //this->symbol = NULL;
 }
 
 Image SymboledEnum::getSymbol(){

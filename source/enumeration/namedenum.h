@@ -12,6 +12,7 @@ protected:
 public:
     NamedEnum(std::string name);
     std::string getName();
+    std::string toString(){return this->name;}
 };
 
 #endif // NAMEDENUM_H
