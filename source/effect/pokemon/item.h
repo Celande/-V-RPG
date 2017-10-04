@@ -4,8 +4,8 @@
 #include "abstracteffectonpkm.h"
 
 namespace effect{
-    class Item : public AbstractEffectOnPkm{
+class Item : public AbstractEffectOnPkm{
 
-    };
+};
 }
 #endif // ITEM_H

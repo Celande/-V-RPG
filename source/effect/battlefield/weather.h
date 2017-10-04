@@ -4,8 +4,8 @@
 #include "abstracteffectonbattlefield.h"
 
 namespace effect {
-    class Weather : public AbstractEffectOnBattlefield{
+class Weather : public AbstractEffectOnBattlefield{
 
-    };
+};
 }
 #endif // WEATHER_H

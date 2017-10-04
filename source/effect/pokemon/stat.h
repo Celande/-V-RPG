@@ -3,9 +3,9 @@
 
 #include "abstracteffectonpkm.h"
 namespace effect{
-    class Type : public AbstractEffectOnPkm{
+class Type : public AbstractEffectOnPkm{
 
-    };
+};
 }
 
 #endif // EFFECTONSTAT_H

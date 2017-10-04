@@ -4,8 +4,8 @@
 #include "abstracteffectonpkm.h"
 
 namespace effect{
-    class Weight : public AbstractEffectOnPkm{
+class Weight : public AbstractEffectOnPkm{
 
-    };
+};
 }
 #endif // WEIGHT_H

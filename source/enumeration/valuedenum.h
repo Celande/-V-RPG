@@ -12,7 +12,7 @@ public:
 protected:
     int value;
 
-    virtual ValuedEnum getEnum(int v){return VALUE_NULL;}
+    ValuedEnum getEnum(int v){return VALUE_NULL;}
 public:
     ValuedEnum(int value);
     int getValue();

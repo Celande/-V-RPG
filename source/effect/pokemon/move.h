@@ -4,9 +4,9 @@
 #include "abstracteffectonpkm.h"
 
 namespace effect{
-    class Move : public AbstractEffectOnPkm{
+class Move : public AbstractEffectOnPkm{
 
-    };
+};
 }
 
 #endif // MOVE_H

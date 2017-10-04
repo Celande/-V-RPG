@@ -4,8 +4,8 @@
 #include "abstracteffectonbattlefield.h"
 
 namespace effect {
-    class Terrain : public AbstractEffectOnBattlefield{
+class Terrain : public AbstractEffectOnBattlefield{
 
-    };
+};
 }
 #endif // TERRAIN_H

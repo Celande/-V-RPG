@@ -4,9 +4,9 @@
 #include "abstracteffectonpkm.h"
 
 namespace effect{
-    class Ability : public AbstractEffectOnPkm{
+class Ability : public AbstractEffectOnPkm{
 
-    };
+};
 }
 
 #endif // ABILITY_H
