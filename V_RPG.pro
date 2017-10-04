@@ -16,7 +16,11 @@ SOURCES += \
     source/enumeration/namedenum.cpp \
     source/enumeration/symboledenum.cpp \
     source/enumeration/valuedenum.cpp \
-    source/effect/abstracteffect.cpp
+    source/effect/abstracteffect.cpp \
+    source/pokemon/abstractpokemon.cpp \
+    source/pokemon/ability.cpp \
+    source/pokemon/move.cpp \
+    source/pokemon/battlepokemon.cpp
 
 # The following define makes your compiler emit warnings if you use
 # any feature of Qt which as been marked deprecated (the exact warnings
@@ -76,4 +80,8 @@ HEADERS += \
     source/effect/battlefield/abstracteffectonbattlefield.h \
     source/effect/battlefield/side.h \
     source/effect/battlefield/terrain.h \
-    source/effect/battlefield/weather.h
+    source/effect/battlefield/weather.h \
+    source/pokemon/abstractpokemon.h \
+    source/pokemon/ability.h \
+    source/pokemon/move.h \
+    source/pokemon/battlepokemon.h
