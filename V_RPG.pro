@@ -213,7 +213,10 @@ DISTFILES += \
     data/pokemon/dlFiles/dlPokemonJson.html \
     data/move/list_needed_moves.xlsx \
     data/move/dlFiles/jquery-3.2.1.js \
-    data/move/dlFiles/dlPokemonJson.html
+    data/move/dlFiles/dlPokemonJson.html \
+    data/ability/list_ability.xlsx \
+    data/ability/list_needed_moves.xlsx \
+    data/move/list_needed_abilities.xlsx
 
 HEADERS += \
     source/stat/stat.h \
