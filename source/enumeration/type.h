@@ -6,6 +6,10 @@
 using namespace std;
 
 class Type : public SymboledEnum{
+
+    Type(const ::std::string name, Image symbol) : SymboledEnum(name, symbol){}
+    Type(const ::std::string name) : SymboledEnum(name){}
+
 public:
     static const Type NORMAL;
     static const Type FIGHT;
@@ -26,27 +30,7 @@ public:
     static const Type DARK;
     static const Type FAIRY;
 
-private:
-    Type(std::string name, Image symbol) : SymboledEnum(name, symbol){}
+    static const Type NONE;
 };
-
-const Type Type::NORMAL = Type("Normal", NULL);
-const Type Type::FIGHT = Type("Fight", NULL);
-const Type Type::FLYING = Type("Flying", NULL);
-const Type Type::POISON = Type("Poison", NULL);
-const Type Type::GROUND = Type("Ground", NULL);
-const Type Type::ROCK = Type("Rock", NULL);
-const Type Type::BUG = Type("Bug", NULL);
-const Type Type::GHOST = Type("Ghost", NULL);
-const Type Type::STEEL = Type("Steel", NULL);
-const Type Type::FIRE = Type("Fire", NULL);
-const Type Type::WATER = Type("Water", NULL);
-const Type Type::GRASS = Type("Grass", NULL);
-const Type Type::ELECTR = Type("Electric", NULL);
-const Type Type::PSYCHIC = Type("Psychic", NULL);
-const Type Type::ICE = Type("Ice", NULL);
-const Type Type::DRAGON = Type("Dragon", NULL);
-const Type Type::DARK = Type("Dark", NULL);
-const Type Type::FAIRY = Type("Fairy", NULL);
 
 #endif // TYPE_H

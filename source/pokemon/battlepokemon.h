@@ -14,12 +14,12 @@ class BattlePokemon : public AbstractPokemon
 private:
     std::string surname;
     unsigned int level;
-    Gender gender;
+    Gender gender = Gender::NONE;
     Move moveSet[4];
     Stat currentStat;
     EV ev;
     IV iv;
-    Nature nature;
+    Nature nature = Nature::DOCILE;
     AbstractStatus status;
 
 public:

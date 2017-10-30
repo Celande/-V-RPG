@@ -11,7 +11,7 @@ protected:
     int id;
     double weight;
     std::string name;
-    Type types[2];
+    Type types[2] = {Type::NORMAL, Type::NONE};
     Stat baseStat;
     HiddenStat hiddenStat;
 

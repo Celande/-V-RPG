@@ -10,7 +10,7 @@ class NamedEnum
 protected:
     std::string name;
 public:
-    NamedEnum(std::string name);
+    NamedEnum(const std::__cxx11::string name);
     std::string getName();
     std::string toString(){return this->name;}
 };

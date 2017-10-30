@@ -1,6 +1,7 @@
 #ifndef IV_H
 #define IV_H
 
+#include "stat.h"
 
 class IV : public Stat
 {

@@ -2,7 +2,7 @@
 
 using namespace std;
 
-NamedEnum::NamedEnum(std::string name)
+NamedEnum::NamedEnum(const ::std::string name)
 {
     this->name = name;
 }
