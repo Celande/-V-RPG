@@ -1,18 +1,14 @@
 QT += core
 QT -= gui
-QT += widgets testlib
+QT += testlib
 
 CONFIG += c++11
 
-TARGET = V_RPG
+TARGET = testqt #V_RPG
 CONFIG += console
 CONFIG -= app_bundle
 
 TEMPLATE = app
-
-# install
-target.path = $$[QT_INSTALL_EXAMPLES]/qtestlib/tutorial1
-INSTALLS += target
 
 SOURCES += \
     source/main.cpp \
@@ -34,13 +30,18 @@ SOURCES += \
     source/stat/hiddenstat.cpp \
     source/stat/ev.cpp \
     source/stat/iv.cpp \
-    source/status/abstractstatus.cpp
+    source/status/abstractstatus.cpp \
+    source/enumeration/type.cpp \
+    source/enumeration/nature.cpp \
+    source/enumeration/gender.cpp
 
 # The following define makes your compiler emit warnings if you use
 # any feature of Qt which as been marked deprecated (the exact warnings
 # depend on your compiler). Please consult the documentation of the
 # deprecated API in order to know how to port your code away from it.
 DEFINES += QT_DEPRECATED_WARNINGS
+
+DEFINES += SRCDIR=\\\"$$PWD/\\\"
 
 # You can also make your code fail to compile if you use deprecated APIs.
 # In order to do so, uncomment the following line.
@@ -262,7 +263,6 @@ HEADERS += \
     source/battlefield/weather.h \
     source/battlefield/terrain.h \
     source/battlefield/side.h \
-    source/testqt.h \
     source/stat/hiddenstat.h \
     source/stat/ev.h \
     source/stat/iv.h \
