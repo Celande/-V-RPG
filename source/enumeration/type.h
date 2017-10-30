@@ -3,6 +3,8 @@
 
 #include"symboledenum.h"
 
+using namespace std;
+
 class Type : public SymboledEnum{
 public:
     static const Type NORMAL;
@@ -28,23 +30,23 @@ private:
     Type(std::string name, Image symbol) : SymboledEnum(name, symbol){}
 };
 
-const Category Category::NORMAL = Category("Normal", NULL);
-const Category Category::FIGHT = Category("Fight", NULL);
-const Category Category::FLYING = Category("Flying", NULL);
-const Category Category::POISON = Category("Poison", NULL);
-const Category Category::GROUND = Category("Ground", NULL);
-const Category Category::ROCK = Category("Rock", NULL);
-const Category Category::BUG = Category("Bug", NULL);
-const Category Category::GHOST = Category("Ghost", NULL);
-const Category Category::STEEL = Category("Steel", NULL);
-const Category Category::FIRE = Category("Fire", NULL);
-const Category Category::WATER = Category("Water", NULL);
-const Category Category::GRASS = Category("Grass", NULL);
-const Category Category::ELECTR = Category("Electric", NULL);
-const Category Category::PSYCHIC = Category("Psychic", NULL);
-const Category Category::ICE = Category("Ice", NULL);
-const Category Category::DRAGON = Category("Dragon", NULL);
-const Category Category::DARK = Category("Dark", NULL);
-const Category Category::FAIRY = Category("Fairy", NULL);
+const Type Type::NORMAL = Type("Normal", NULL);
+const Type Type::FIGHT = Type("Fight", NULL);
+const Type Type::FLYING = Type("Flying", NULL);
+const Type Type::POISON = Type("Poison", NULL);
+const Type Type::GROUND = Type("Ground", NULL);
+const Type Type::ROCK = Type("Rock", NULL);
+const Type Type::BUG = Type("Bug", NULL);
+const Type Type::GHOST = Type("Ghost", NULL);
+const Type Type::STEEL = Type("Steel", NULL);
+const Type Type::FIRE = Type("Fire", NULL);
+const Type Type::WATER = Type("Water", NULL);
+const Type Type::GRASS = Type("Grass", NULL);
+const Type Type::ELECTR = Type("Electric", NULL);
+const Type Type::PSYCHIC = Type("Psychic", NULL);
+const Type Type::ICE = Type("Ice", NULL);
+const Type Type::DRAGON = Type("Dragon", NULL);
+const Type Type::DARK = Type("Dark", NULL);
+const Type Type::FAIRY = Type("Fairy", NULL);
 
 #endif // TYPE_H

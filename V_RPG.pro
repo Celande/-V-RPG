@@ -1,5 +1,6 @@
 QT += core
 QT -= gui
+QT += widgets testlib
 
 CONFIG += c++11
 
@@ -8,6 +9,10 @@ CONFIG += console
 CONFIG -= app_bundle
 
 TEMPLATE = app
+
+# install
+target.path = $$[QT_INSTALL_EXAMPLES]/qtestlib/tutorial1
+INSTALLS += target
 
 SOURCES += \
     source/main.cpp \
@@ -24,7 +29,12 @@ SOURCES += \
     source/battlefield/battlefield.cpp \
     source/battlefield/weather.cpp \
     source/battlefield/terrain.cpp \
-    source/battlefield/side.cpp
+    source/battlefield/side.cpp \
+    source/testqt.cpp \
+    source/stat/hiddenstat.cpp \
+    source/stat/ev.cpp \
+    source/stat/iv.cpp \
+    source/status/abstractstatus.cpp
 
 # The following define makes your compiler emit warnings if you use
 # any feature of Qt which as been marked deprecated (the exact warnings
@@ -251,4 +261,9 @@ HEADERS += \
     source/battlefield/battlefield.h \
     source/battlefield/weather.h \
     source/battlefield/terrain.h \
-    source/battlefield/side.h
+    source/battlefield/side.h \
+    source/testqt.h \
+    source/stat/hiddenstat.h \
+    source/stat/ev.h \
+    source/stat/iv.h \
+    source/status/abstractstatus.h
