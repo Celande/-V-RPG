@@ -4,3 +4,8 @@ AbstractStatus::AbstractStatus()
 {
 
 }
+
+void passTurn()
+{
+	
+}
