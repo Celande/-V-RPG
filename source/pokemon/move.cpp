@@ -8,8 +8,7 @@ Move::Move()
 }
 
 Move::Move(std::string name, Type type[], Category category,
-     unsigned int maxPP, unsigned int baseAccuracy,
-     unsigned int basePower, bool contact){
+     unsigned int maxPP, unsigned int baseAccuracy){
     lastId++;
     this->id = lastId;
     this->name = name;
@@ -20,6 +19,16 @@ Move::Move(std::string name, Type type[], Category category,
     this->currentPP = maxPP;
     this->baseAccuracy = baseAccuracy;
     this->currentAccuracy = baseAccuracy;
+    this->basePower = 0;
+    this->currentPower = 0;
+    this->contact = false;
+}
+
+Move::Move(std::string name, Type type[], Category category,
+     unsigned int maxPP, unsigned int baseAccuracy,
+     unsigned int basePower, bool contact)
+    : Move(name, type, category,
+           maxPP, baseAccuracy){
     this->basePower = basePower;
     this->currentPower = basePower;
     this->contact = contact;

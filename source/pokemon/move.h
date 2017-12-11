@@ -30,6 +30,9 @@ public:
     Move();
 
     Move(std::string name, Type type[], Category category,
+         unsigned int maxPP, unsigned int baseAccuracy);
+
+    Move(std::string name, Type type[], Category category,
          unsigned int maxPP, unsigned int baseAccuracy,
          unsigned int basePower, bool contact);
 
