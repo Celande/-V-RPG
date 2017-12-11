@@ -12,7 +12,7 @@ public:
 protected:
     int value;
 
-    ValuedEnum getEnum(int v){return VALUE_NULL;}
+    virtual ValuedEnum getEnum(int v);
 public:
     ValuedEnum(int value);
     int getValue();
@@ -24,7 +24,5 @@ public:
     ValuedEnum operator+ (const ValuedEnum& v);
     ValuedEnum operator- (const ValuedEnum& v);
 };
-
-const ValuedEnum ValuedEnum::VALUE_NULL = ValuedEnum(42);
 
 #endif // VALUEDENUM_H

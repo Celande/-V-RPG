@@ -1,6 +1,3 @@
 #include "hiddenstat.h"
 
-HiddenStat::HiddenStat()
-{
-
-}
+HiddenStat::HiddenStat(){}

@@ -2,13 +2,11 @@
 #define NATURE_H
 
 #include"namedenum.h"
-#include "../stat/stat.h"
+#include "source/stat/stat.h"
 
 class Nature : public NamedEnum{
 
-    Nature(const ::std::string name, Stat* stat) : NamedEnum(name){
-        this->stat = *stat;
-    }
+    Nature(const ::std::string name, Stat* stat);
 
 public:
     static const Nature HARDY;

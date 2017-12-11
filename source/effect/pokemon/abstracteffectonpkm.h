@@ -4,11 +4,9 @@
 #include "../abstracteffect.h"
 
 class AbstractEffectOnPkm : public AbstractEffect{
-protected:
-    BattlePokemon pkm;
 public:
-    AbstractEffectOnPkm(int chance, std::string description, int nbTurn, BattlePokemon pkm) : AbstractEffect(chance, description, nbTurn){this->pkm = pkm;}
-    AbstractEffectOnPkm(int chance, std::string description, BattlePokemon pkm) : AbstractEffect(chance, description){this->pkm = pkm;}
+    AbstractEffectOnPkm(int chance, std::string description, int nbTurn) : AbstractEffect(chance, description, nbTurn){}
+    AbstractEffectOnPkm(int chance, std::string description) : AbstractEffect(chance, description){}
 // UPDATE THE CLASS DIAGRAM
 };
 

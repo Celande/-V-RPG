@@ -6,10 +6,10 @@
 using namespace std;
 
 class Type : public SymboledEnum{
-
-    Type(const ::std::string name, Image symbol) : SymboledEnum(name, symbol){}
-    Type(const ::std::string name) : SymboledEnum(name){}
-
+public:
+    Type();
+    Type(const ::std::string name, Image symbol);
+    Type(const ::std::string name);
 public:
     static const Type NORMAL;
     static const Type FIGHT;

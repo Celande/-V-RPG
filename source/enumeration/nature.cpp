@@ -1,5 +1,11 @@
 #include "nature.h"
 
+using namespace std;
+
+Nature::Nature(const ::std::string name, Stat* stat) : NamedEnum(name){
+    this->stat = *stat;
+}
+
 /*Percent stats added according to base stat : HP     ATK      DEF      SPE_ATK  SPE_DEF  SPE*/
 const Nature Nature::HARDY      = Nature("Hardy",       new Stat(0,     0,       0,       0,       0,       0));
 const Nature Nature::LONELY     = Nature("Lonely",      new Stat(0,     10 ,     -10 ,    0,       0,       0));

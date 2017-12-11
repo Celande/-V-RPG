@@ -7,16 +7,28 @@ CONFIG += c++11
 TARGET = testqt #V_RPG
 CONFIG += console
 CONFIG -= app_bundle
+CONFIG += object_parallel_to_source
 
 TEMPLATE = app
 
 SOURCES += \
     source/main.cpp \
     source/stat/stat.cpp \
+    source/stat/hiddenstat.cpp \
+    source/stat/ev.cpp \
+    source/stat/iv.cpp \
     source/enumeration/image.cpp \
     source/enumeration/namedenum.cpp \
     source/enumeration/symboledenum.cpp \
     source/enumeration/valuedenum.cpp \
+    source/enumeration/type.cpp \
+    source/enumeration/nature.cpp \
+    source/enumeration/gender.cpp \
+    source/enumeration/category.cpp \
+    source/enumeration/priority.cpp \
+    source/enumeration/stat.cpp \
+    source/enumeration/statstage.cpp \
+    source/enumeration/hiddenstat.cpp \
     source/effect/abstracteffect.cpp \
     source/pokemon/abstractpokemon.cpp \
     source/pokemon/ability.cpp \
@@ -27,13 +39,7 @@ SOURCES += \
     source/battlefield/terrain.cpp \
     source/battlefield/side.cpp \
     source/testqt.cpp \
-    source/stat/hiddenstat.cpp \
-    source/stat/ev.cpp \
-    source/stat/iv.cpp \
-    source/status/abstractstatus.cpp \
-    source/enumeration/type.cpp \
-    source/enumeration/nature.cpp \
-    source/enumeration/gender.cpp
+    source/status/abstractstatus.cpp
 
 # The following define makes your compiler emit warnings if you use
 # any feature of Qt which as been marked deprecated (the exact warnings

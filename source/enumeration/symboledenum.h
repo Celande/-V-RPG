@@ -10,6 +10,7 @@ class SymboledEnum : public NamedEnum
 protected:
     Image symbol;
 public:
+    SymboledEnum();
     SymboledEnum(const ::std::string name);
     SymboledEnum(const ::std::string name, Image symbol);
     Image getSymbol();

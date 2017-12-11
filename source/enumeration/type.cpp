@@ -1,5 +1,9 @@
 #include "type.h"
 
+Type::Type(){}
+Type::Type(const ::std::string name, Image symbol) : SymboledEnum(name, symbol){}
+Type::Type(const ::std::string name) : SymboledEnum(name){}
+
 const Type Type::NORMAL = Type("Normal");
 const Type Type::FIGHT = Type("Fight");
 const Type Type::FLYING = Type("Flying");

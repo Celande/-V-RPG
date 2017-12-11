@@ -7,11 +7,9 @@
 
 namespace effect{
 class Side : public AbstractEffectOnBattlefield{
-protected:
-    battlefield::Side side;
 public:
-    Side(int chance, std::string description, int nbTurn, battlefield::Side side) : AbstractEffect(chance, description, nbTurn){this->side = side;}
-    Side(int chance, std::string description, battlefield::Side side) : AbstractEffect(chance, description){this->battlefield = battlefield;}
+    Side(int chance, std::string description, int nbTurn) : AbstractEffect(chance, description, nbTurn){}
+    Side(int chance, std::string description) : AbstractEffect(chance, description){}
 };
 }
 

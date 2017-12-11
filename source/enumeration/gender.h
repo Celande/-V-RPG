@@ -11,8 +11,8 @@ public:
     static const Gender NONE;
 
 private:
-    Gender(std::string name, Image symbol) : SymboledEnum(name, symbol) {}
-    Gender(std::string name) : SymboledEnum(name) {}
+    Gender(std::string name, Image symbol);
+    Gender(std::string name);
 };
 
 #endif // GENDER_H

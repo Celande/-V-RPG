@@ -2,6 +2,8 @@
 
 using namespace std;
 
+SymboledEnum::SymboledEnum(){}
+
 SymboledEnum::SymboledEnum(const string name, Image symbol) : NamedEnum(name)
 {
     this->symbol = symbol;

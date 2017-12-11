@@ -10,11 +10,8 @@ public:
     static const Category STATUS;
 
 private:
-    Category(std::string name, Image symbol) : SymboledEnum(name, symbol){}
+    Category(std::string name, Image symbol);
+    Category(std::string name);
 };
-
-const Category Category::PHYSICAL = Category("Physical", NULL);
-const Category Category::SPECIAL = Category("Special", NULL);
-const Category Category::STATUS = Category("Status", NULL);
 
 #endif // CATEGORY_H

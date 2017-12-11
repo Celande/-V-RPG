@@ -1,7 +1,7 @@
 #ifndef HIDDENSTAT_H
 #define HIDDENSTAT_H
 
-#include"namedenum.h"
+#include "namedenum.h"
 
 namespace enumeration {
     class HiddenStat : public NamedEnum{
@@ -10,11 +10,9 @@ namespace enumeration {
         static const HiddenStat ACCURACY;
 
     private:
-        HiddenStat(std::string name) : NamedEnum(name){}
+        HiddenStat();
+        HiddenStat(const std::string name);
     };
-
-    const HiddenStat HiddenStat::EVASION = Stat("Evasion");
-    const HiddenStat HiddenStat::ACCURACY = Stat("Accuracy");
 }
 
 #endif // HIDDENSTAT_H

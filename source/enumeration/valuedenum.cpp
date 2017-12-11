@@ -5,6 +5,12 @@ ValuedEnum::ValuedEnum(int value)
     this->value = value;
 }
 
+const ValuedEnum ValuedEnum::VALUE_NULL = ValuedEnum(42);
+
+ValuedEnum ValuedEnum::getEnum(int v){
+    return VALUE_NULL;
+}
+
 int ValuedEnum::getValue(){
     return this->value;
 }

@@ -3,6 +3,8 @@
 
 #include"namedenum.h"
 
+// can't create enum with name+value+statstage because of const
+
 namespace enumeration {
     class Stat : public NamedEnum{
     public:
@@ -14,15 +16,9 @@ namespace enumeration {
         static const Stat SPE;
 
     private:
-        Stat(std::string name) : NamedEnum(name){}
+        Stat();
+        Stat(std::string name);
     };
-
-    const Stat Stat::HP = Stat("Health point");
-    const Stat Stat::ATK = Stat("Attack");
-    const Stat Stat::DEF = Stat("Defense");
-    const Stat Stat::SPE_ATK = Stat("Special attack");
-    const Stat Stat::SPE_DEF = Stat("Special defense");
-    const Stat Stat::SPE = Stat("Speed");
 }
 
 #endif // STAT_H
