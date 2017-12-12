@@ -1,5 +1,5 @@
-#ifndef HIDDENSTAT_H
-#define HIDDENSTAT_H
+#ifndef ENUMERATION_HIDDENSTAT_H
+#define ENUMERATION_HIDDENSTAT_H
 
 #include "namedenum.h"
 
@@ -15,4 +15,4 @@ namespace enumeration {
     };
 }
 
-#endif // HIDDENSTAT_H
+#endif // ENUMERATION_HIDDENSTAT_H

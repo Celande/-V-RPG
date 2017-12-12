@@ -11,8 +11,8 @@ public:
     AbstractStatus();
     void passTurn();
 protected:
-    std::string name;
-    Image symbol;
+	std::string name;
+	Image symbol;
     //effectOnStat statEffect
 };
 

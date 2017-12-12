@@ -1,5 +1,5 @@
-#ifndef STAT_H
-#define STAT_H
+#ifndef ENUMERATION_STAT_H
+#define ENUMERATION_STAT_H
 
 #include"namedenum.h"
 
@@ -21,4 +21,4 @@ namespace enumeration {
     };
 }
 
-#endif // STAT_H
+#endif // ENUMERATION_STAT_H

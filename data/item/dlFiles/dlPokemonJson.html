@@ -1,0 +1,106 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <script src="jquery-3.2.1.js"></script>
+  </head>
+  <body>
+    <script defer>
+    $(document).ready(function() {
+
+      /** MAIN **/
+      function main(){
+        var url = "https://pokeapi.co/api/v2/pokemon/";
+        var id = 50 + 30;
+        var maxId = 151;
+        var path = "D:\\Users\\Célande\\Desktop\\Pkm_bot\\data\\pokemon\\";
+
+        // At each changement of number of 0 in front, bug
+
+        while(id <= maxId && id < 10){
+          doAjax(url, id);
+          id++;
+        }
+
+        while(id <= maxId && id < 100 && id > 9){
+          doAjax(url, id);
+          id++;
+        }
+
+        while(id >= 100 && id <= maxId){
+          doAjax(url, id);
+          id++;
+        }
+      }
+
+      main();
+    } );
+
+    function download(strData, strFileName, strMimeType) {
+      var D = document,
+          A = arguments,
+          a = D.createElement("a"),
+          d = A[0],
+          n = A[1],
+          t = A[2] || "text/plain";
+
+      //build download link:
+      a.href = "data:" + strMimeType + "charset=utf-8," + escape(strData);
+
+
+      if (window.MSBlobBuilder) { // IE10
+          var bb = new MSBlobBuilder();
+          bb.append(strData);
+          return navigator.msSaveBlob(bb, strFileName);
+      } /* end if(window.MSBlobBuilder) */
+
+
+
+      if ('download' in a) { //FF20, CH19
+          a.setAttribute("download", n);
+          a.innerHTML = "downloading...";
+          D.body.appendChild(a);
+          setTimeout(function() {
+              var e = D.createEvent("MouseEvents");
+              e.initMouseEvent("click", true, false, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);
+              a.dispatchEvent(e);
+              D.body.removeChild(a);
+          }, 66);
+          return true;
+      }; /* end if('download' in a) */
+
+        //do iframe dataURL download: (older W3)
+        var f = D.createElement("iframe");
+        D.body.appendChild(f);
+        f.src = "data:" + (A[2] ? A[2] : "application/octet-stream") + (window.btoa ? ";base64" : "") + "," + (window.btoa ? window.btoa : escape)(strData);
+        setTimeout(function() {
+            D.body.removeChild(f);
+        }, 333);
+        return true;
+    }
+
+    function doAjax(_url, _id){
+      return $.ajax({
+        url: _url + _id,
+        //data: 'id' = _id
+      }).done(function(data) {
+        console.log(data);
+        var jsonPretty = JSON.stringify(data,null,2);
+        //console.log(jsonPretty);
+        //$("body").html(data);
+        var txtFile;
+        if(_id >= 100){
+          txtFile = "" + _id + ".json";
+        }
+        else if (_id >= 10) {
+          txtFile = "0" + _id + ".json";
+        } else {
+          txtFile = "00" + _id + ".json";
+        }
+
+        download(jsonPretty, txtFile, 'application/json');
+      });
+    }
+
+    </script>
+  </body>
+</html>
